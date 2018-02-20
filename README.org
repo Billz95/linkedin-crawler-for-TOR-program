@@ -1,0 +1,26 @@
+* Linkedin Crawler
+
+** Introduction
+   - This is a crawler that is built for Project "Social Network as a Vector for Malware" in Taste of Reserach Project (UNSW).
+   - Techinal Report and Screen cast will be added in soon future.
+   - It is able to generate phishing emails' html based on the profile link put in
+     - Profile needs to have skill section, and endorsers available. 
+     - And one of target endorser must have skill section and endorsers as well
+
+** Usage
+
+*** Before Running
+    - Put your linkedin username and password as tuples like =(username, password)= into the =phishing.py='s ~infos~ list
+*** Run
+**** Build Phishing Emails
+    #+BEGIN_SRC shell
+    python3 ./phishing.py $target_url
+    #+END_SRC
+
+    - The output url will be saved in the bait*.html
+
+*** Dependency
+    It needs the following packages/program.
+    - python3
+    - BeautifulSoup (pip3 install bs4)
+
